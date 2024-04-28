@@ -51,52 +51,34 @@ const ProfileScreen = () => {
 
   return (
     <FormContainer>
-      <h1>Update Profile</h1>
+      <h1 className="text-black">User Profile</h1>
 
       <Form onSubmit={submitHandler}>
         <Form.Group className='my-2' controlId='name'>
-          <Form.Label>Name</Form.Label>
+          <Form.Label className='text-black'>Name</Form.Label>
           <Form.Control
             type='name'
             placeholder='Enter Name'
             value={name}
             onChange={(e) => setName(e.target.value)}
+            className='text-white bg-dark'
+            disabled={true}
           ></Form.Control>
         </Form.Group>
 
         <Form.Group className='my-2' controlId='email'>
-          <Form.Label>Email Address</Form.Label>
+          <Form.Label className='text-black'>Email Address</Form.Label>
           <Form.Control
             type='email'
             placeholder='Enter Email'
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            className='text-white bg-dark'
+            disabled={true}
           ></Form.Control>
         </Form.Group>
 
-        <Form.Group className='my-2' controlId='password'>
-          <Form.Label>Password</Form.Label>
-          <Form.Control
-            type='password'
-            placeholder='Enter Password'
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          ></Form.Control>
-        </Form.Group>
 
-        <Form.Group className='my-2' controlId='confirmPassword'>
-          <Form.Label>Confirm Password</Form.Label>
-          <Form.Control
-            type='password'
-            placeholder='Confirm Password'
-            value={confirmPassword}
-            onChange={(e) => setConfirmPassword(e.target.value)}
-          ></Form.Control>
-        </Form.Group>
-
-        <Button type='submit' variant='primary' className='mt-3'>
-          {isLoading ? <Loader /> : "Update"}
-        </Button>
       </Form>
     </FormContainer>
   );

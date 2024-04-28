@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 export const apiSlice = createApi({
   baseQuery: fetchBaseQuery({
-    baseUrl: "",
+    baseUrl: "http://localhost:5000",
   }),
   tagTypes: ["User"],
   // eslint-disable-next-line no-unused-vars
