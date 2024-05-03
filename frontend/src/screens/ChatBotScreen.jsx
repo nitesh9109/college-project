@@ -113,8 +113,8 @@ function ChatBot() {
         />
         <hr className="hr-line" />
         <p id="author">
-          Made By NiteshNagar{" "}
-          <a href="https://github.com/nitesh9109/ai-chat-bot" target="_blank">
+          Made By Nitesh & Vaibhav{" "}
+          <a href="https://github.com/nitesh9109/college-project" target="_blank">
             Source Code
           </a>
         </p>
